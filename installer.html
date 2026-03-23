@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Installer ACI France – Guide</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f4f0;color:#1a1a18;padding:20px}
+.header{text-align:center;padding:30px 20px 20px;background:#E24B4A;color:#fff;border-radius:14px;margin-bottom:24px}
+.header h1{font-size:22px;font-weight:800;margin-bottom:6px}
+.header p{font-size:13px;opacity:.85}
+.logo{font-size:48px;margin-bottom:10px}
+.section{background:#fff;border-radius:12px;padding:18px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.section h2{font-size:14px;font-weight:800;color:#E24B4A;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.step{display:flex;gap:12px;margin-bottom:14px;align-items:flex-start}
+.step:last-child{margin-bottom:0}
+.num{width:28px;height:28px;border-radius:50%;background:#E24B4A;color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.step-content{flex:1}
+.step-title{font-size:13px;font-weight:700;margin-bottom:3px}
+.step-desc{font-size:12px;color:#5f5e5a;line-height:1.5}
+.step-desc a{color:#E24B4A;font-weight:700;text-decoration:none}
+.badge{display:inline-block;background:#f0f0ee;border-radius:6px;padding:2px 8px;font-size:11px;font-weight:700;color:#1a1a18;margin:0 2px}
+.badge.red{background:#E24B4A;color:#fff}
+.badge.blue{background:#185fa5;color:#fff}
+.tip{background:#fff8e1;border-left:3px solid #EF9F27;padding:10px 12px;border-radius:0 8px 8px 0;font-size:12px;color:#5f5e5a;margin-top:8px;line-height:1.5}
+.divider{text-align:center;font-size:11px;color:#888;margin:8px 0;font-weight:700}
+.os-tabs{display:flex;gap:6px;margin-bottom:14px}
+.os-tab{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;border:2px solid #e0e0dc;color:#888;background:#f5f4f0}
+.os-tab.active{border-color:#E24B4A;color:#E24B4A;background:#fff5f5}
+.os-content{display:none}.os-content.active{display:block}
+.netlify-btn{display:block;text-align:center;background:#00C7B7;color:#fff;padding:14px;border-radius:10px;font-size:14px;font-weight:800;text-decoration:none;margin:10px 0}
+.netlify-btn:hover{background:#00b0a1}
+.note{font-size:11px;color:#888;text-align:center;margin-top:6px}
+.check{color:#1D9E75;font-weight:700}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">📲</div>
+  <h1>Installer ACI France</h1>
+  <p>Guide d'installation en 3 étapes simples</p>
+</div>
+
+<!-- ÉTAPE 1 -->
+<div class="section">
+  <h2>① Mettre en ligne (1 minute)</h2>
+
+  <div class="step">
+    <div class="num">1</div>
+    <div class="step-content">
+      <div class="step-title">Ouvrir Netlify Drop</div>
+      <div class="step-desc">
+        Aller sur <a href="https://app.netlify.com/drop" target="_blank">app.netlify.com/drop</a>
+        depuis un ordinateur (pas le téléphone).
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">2</div>
+    <div class="step-content">
+      <div class="step-title">Déposer le dossier</div>
+      <div class="step-desc">
+        Glisser-déposer le dossier <span class="badge">pwa-aci</span> entier
+        dans la zone "Drag and drop your site folder here".
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num">3</div>
+    <div class="step-content">
+      <div class="step-title">Copier l'URL</div>
+      <div class="step-desc">
+        Netlify génère automatiquement une URL du type<br>
+        <span class="badge">https://quelquechose.netlify.app</span><br>
+        Copier cette URL, vous en aurez besoin pour l'étape suivante.
+      </div>
+    </div>
+  </div>
+
+  <div class="tip">
+    💡 C'est entièrement <strong>gratuit</strong>, sans inscription nécessaire,
+    et l'URL est permanente.
+  </div>
+</div>
+
+<!-- ÉTAPE 2 -->
+<div class="section">
+  <h2>② Installer sur le téléphone</h2>
+
+  <div class="os-tabs">
+    <div class="os-tab active" onclick="showOS('android')">🤖 Android</div>
+    <div class="os-tab" onclick="showOS('iphone')">🍎 iPhone</div>
+  </div>
+
+  <div class="os-content active" id="os-android">
+    <div class="step">
+      <div class="num">1</div>
+      <div class="step-content">
+        <div class="step-title">Ouvrir Chrome sur votre Android</div>
+        <div class="step-desc">Coller l'URL Netlify dans la barre d'adresse de Chrome.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div class="step-content">
+        <div class="step-title">Bannière d'installation</div>
+        <div class="step-desc">
+          Une bannière rouge <span class="badge red">Installer</span> apparaît
+          en bas de l'écran → toucher <strong>Installer</strong>.
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div class="step-content">
+        <div class="step-title">Si la bannière n'apparaît pas</div>
+        <div class="step-desc">
+          Toucher le menu <span class="badge">⋮</span> en haut à droite
+          → <strong>Ajouter à l'écran d'accueil</strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="os-content" id="os-iphone">
+    <div class="step">
+      <div class="num">1</div>
+      <div class="step-content">
+        <div class="step-title">Ouvrir Safari (obligatoire)</div>
+        <div class="step-desc">Sur iPhone, l'installation ne fonctionne <strong>qu'avec Safari</strong>.
+        Coller l'URL Netlify dans Safari.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div class="step-content">
+        <div class="step-title">Toucher le bouton Partager</div>
+        <div class="step-desc">
+          L'icône <span class="badge">⬆</span> en bas au centre de Safari.
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div class="step-content">
+        <div class="step-title">Sur l'écran d'accueil</div>
+        <div class="step-desc">
+          Dans le menu qui s'ouvre, faire défiler et toucher
+          <strong>« Sur l'écran d'accueil »</strong> → <strong>Ajouter</strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ÉTAPE 3 -->
+<div class="section">
+  <h2>③ Résultat</h2>
+
+  <div class="step">
+    <div class="num" style="background:#1D9E75">✓</div>
+    <div class="step-content">
+      <div class="step-title">L'icône ACI France apparaît sur votre écran</div>
+      <div class="step-desc">L'application s'ouvre en plein écran, sans barre de navigateur.</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num" style="background:#1D9E75">✓</div>
+    <div class="step-content">
+      <div class="step-title">Fonctionne hors-ligne</div>
+      <div class="step-desc">Après la première ouverture, toutes les données sont mises en cache.
+      L'app fonctionne même sans connexion internet.</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="num" style="background:#1D9E75">✓</div>
+    <div class="step-content">
+      <div class="step-title">Mise à jour automatique</div>
+      <div class="step-desc">Si vous mettez à jour le fichier sur Netlify,
+      l'app se met à jour automatiquement à la prochaine ouverture.</div>
+    </div>
+  </div>
+</div>
+
+<div class="note">En cas de problème, contacter votre référent numérique CGT.</div>
+
+<script>
+function showOS(os){
+  document.querySelectorAll('.os-tab').forEach(function(t){t.classList.remove('active');});
+  document.querySelectorAll('.os-content').forEach(function(c){c.classList.remove('active');});
+  document.querySelector('[onclick="showOS(\''+os+'\')"]').classList.add('active');
+  document.getElementById('os-'+os).classList.add('active');
+}
+</script>
+</body>
+</html>
