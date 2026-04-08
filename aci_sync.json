@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "timestamp": 1775641837635,
+  "timestamp": 1775641933316,
   "device": "desktop",
   "edits": {
     "structs": {},
     "contacts": {},
     "adherents": {},
     "new_structs": [],
-    "notes": {}
+    "notes": {},
+    "_syncTs": 1775641837635
   },
   "conquete": {
     "status": {
