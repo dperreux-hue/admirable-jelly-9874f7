@@ -1,7 +1,23 @@
 {
   "version": 2,
-  "timestamp": 1775641793320,
+  "timestamp": 1775641826540,
   "device": "desktop",
-  "edits": {},
-  "conquete": {}
+  "edits": {
+    "structs": {},
+    "contacts": {},
+    "adherents": {},
+    "new_structs": [],
+    "notes": {}
+  },
+  "conquete": {
+    "status": {
+      "82124377100036": 4,
+      "82124377100028": 4,
+      "33896257400061": 4,
+      "40909426500082": 4,
+      "40909426500066": 4,
+      "83114945500022": 4
+    },
+    "notes": {}
+  }
 }
