@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": 1776171144981,
+  "timestamp": 1776171165917,
   "device": "desktop",
   "edits": {
     "structs": {},
@@ -8,7 +8,7 @@
     "adherents": {},
     "new_structs": [],
     "notes": {},
-    "_syncTs": 1776171134223
+    "_syncTs": 1776171144981
   },
   "conquete": {
     "status": {
