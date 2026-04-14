@@ -1,7 +1,6 @@
 {
-  "version": 2,
-  "timestamp": 1776186697467,
-  "device": "desktop",
+  "ts": 1776186817204,
+  "device": "mobile",
   "edits": {
     "structs": {},
     "contacts": {},
