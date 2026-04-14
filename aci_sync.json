@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": 1776170422909,
+  "timestamp": 1776170533896,
   "device": "desktop",
   "edits": {
     "structs": {},
@@ -20,6 +20,5 @@
       "83114945500022": 4
     },
     "notes": {}
-  },
-  "_masterTs": 1776170422909
+  }
 }
